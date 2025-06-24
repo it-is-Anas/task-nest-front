@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import "../style/layouts.css";
+import "../style/Logginglayouts.css";
 import loggingImg from "../assets/system_picture/loggingPic1.jpg";
 import LoggingLogo from "../components/Logo/LoggingLogo";
 
@@ -9,8 +9,7 @@ export default function LogLayout() {
         <div className="g-layout" >  
             <form action="" className="g-layout_form-sec">
                 <LoggingLogo />
-                <LogInFrom />
-                
+                <Outlet />
             </form>
             <div className="g-layout_picture-sec">
                 <img className='g-layout_picture' src={loggingImg} alt="" />

@@ -1,4 +1,3 @@
-import '../../style/Inputs.css';
 
 
 type props = {

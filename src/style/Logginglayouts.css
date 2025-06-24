@@ -47,7 +47,7 @@
     width: 20em;
     padding: .2em;
     font-size: 1em;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     outline: none;
     margin: 0.4em;
@@ -57,7 +57,7 @@
     font-weight: bold;
     margin-top: 1em;
     margin-bottom: 1em;
-    
+    font-size: 0.8em;
 }
 .g-google-btn{
     display: flex;
@@ -91,6 +91,55 @@
     font-size: .9em;
     cursor: pointer;
 }
+
+
+
+.g-input-double-box > .g-input-form-box{
+    width: 40%;
+}
+.g-input-double-box > .g-input-form-box > .g-input-form{
+    width: 9.5em;
+    
+}
+.g-input-double-box > .g-input-form-box:last-of-type{
+    margin-left: 1em;
+}
+
+.g-input-form-box{
+    width: 100%;
+    display: grid;
+    place-content: center;
+    font-size: 0.8em;
+}
+.g-input-label{
+    font-size: .8em;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+.g-input-form{
+    width: 20em;
+    padding: .2em;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    /* margin: 0.4em; */
+    font-weight: lighter;
+    padding: .7em 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: var(--gray);
+}
+
+.g-input-double-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20em;
+}
+
+
+
 
 @media (max-width: 768px) {
     .g-layout{
