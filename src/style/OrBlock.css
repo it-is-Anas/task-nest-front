@@ -1,0 +1,23 @@
+.or-block-box{
+    width: 65%;
+    height: 2em;
+    /* background-color: red; */
+    position: relative;
+}
+.or-block_line{
+    width: 100%;
+    height: .5px;
+    /* background-color: var(--dark-blue); */
+    position: absolute;
+    top: 50%;
+    border: 1px dotted var(--dark-blue);
+    transform: translate(0%,-50%);
+}
+.or-block_or{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--white);
+    padding: 10px;
+}

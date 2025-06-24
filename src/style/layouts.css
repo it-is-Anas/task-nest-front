@@ -1,0 +1,102 @@
+.g-layout{
+    width: 100dvw;
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.g-layout > *{
+    width: 100%;
+    height: 100%;
+}
+.g-layout_form-sec{
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.g-form{
+    /* background-color: yellow; */
+    width: 90%;
+    /* min-height: 75%; */
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.g-form_head-line{
+    color: var(--light-blue);
+    font-weight: bold;
+}
+
+.g-form_sub-head-line{
+    color: var(--light-green);
+    font-size: .8em;
+    font-weight: 500;
+    margin-top: 1em;
+}
+
+
+.g-form-btn{
+    width: 20em;
+    padding: .2em;
+    font-size: 1em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 0.4em;
+    font-weight: lighter;
+    cursor: pointer;
+    padding: .7em;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+}
+.g-google-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-blue);
+}
+.google-btn-icon{
+    width: 1.5em;
+    margin: 0 5px;
+}
+.g-form-btn_dark-blue{
+    background: var(--light-blue);
+    color: var(--gray);
+}
+
+.g-layout_picture-sec{
+    display: grid;
+    place-content: center;
+}
+.g-layout_picture{
+    width: 20em;
+    height: 25em;
+    border-radius: 3px 17px;
+}
+
+.g-form-link{
+    color: var(--light-blue);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: .9em;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .g-layout{
+        grid-template-columns: 1fr;
+    }
+    .g-layout_picture-sec{
+        display: none;
+    }
+}

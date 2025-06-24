@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    --moz-box-sizing: border-box;
+    --o-box-sizing: border-box;
+    --webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #FFFFFF;
+    --dark-blue: #333446;
+    --light-blue: #7F8CAA;
+    --light-green: #B8CFCE;
+    --gray: #EAEFEF;
+    --black: #000000;
+
+    
+}
+
+#root{
+    width: 100dvw;
+    height: 100dvh;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+
+.g-logo{
+    margin-right: auto;
+    margin-left: .5em;
+}
