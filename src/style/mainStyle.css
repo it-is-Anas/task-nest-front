@@ -30,3 +30,31 @@
     margin-right: auto;
     margin-left: .5em;
 }
+
+
+.container{
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+@media (min-width: 1000px) {
+    .container{
+        width: 900px;
+    }
+}
+@media (max-width: 1000px) {
+    .container{
+        width: 768px;
+    }
+}
+@media (max-width: 768px) {
+    .container{
+        width: 550px;
+    }
+}
+@media (max-width: 550px) {
+    .container{
+        width: 100%;
+    }
+}
