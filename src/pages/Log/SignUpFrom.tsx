@@ -1,9 +1,9 @@
-import LoggingBtn from "../Buttons/LoggingBtn";
+import LoggingBtn from "../../components/Buttons/LoggingBtn";
 import googleLogo from '../../assets/system_picture/Logo/icons8-google-96 (1).png';
-import OrBlock from "../OrBlock/OrBlock";
-import InputForm from "../Inputs/InputForm";
-import FormLink from "../Links/FormLink";
-import DoubleInputForm from "../Inputs/DoubleInputForm";
+import OrBlock from "../../components/OrBlock/OrBlock";
+import InputForm from "../../components/Inputs/InputForm";
+import FormLink from "../../components/Links/FormLink";
+import DoubleInputForm from "../../components/Inputs/DoubleInputForm";
 
 export default function LogInFrom() {
     return (

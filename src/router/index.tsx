@@ -1,10 +1,10 @@
-import ReactDOM from "react-dom/client";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 import LogLayout from "../layouts/LogLayout";
-import LogInFrom from "../components/Forms/LogInFrom";
-import SignUpFrom from "../components/Forms/SignUpFrom";
+import LogInFrom from "../pages/Log/LogInFrom";
+import SignUpFrom from "../pages/Log/SignUpFrom";
 
 
 import UserLayout from '../layouts/UserLayout';

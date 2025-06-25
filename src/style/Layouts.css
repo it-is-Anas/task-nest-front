@@ -1,3 +1,10 @@
+.g-logo{
+    margin-right: auto;
+    margin-left: .5em;
+}
+.g-logo > img{
+    width: 8em;
+}
 .g-layout{
     width: 100dvw;
     height: 100dvh;
@@ -140,6 +147,55 @@
     justify-content: center;
     width: 20em;
 }
+
+/* user layout */
+
+.user-layout{
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.user-section{
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.main-landing-sec{
+
+}
+.main-landing-sec.with-header{
+    display: grid;
+    grid-template-rows: 4em 1fr; 
+    
+}
+
+.grid-two-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.main-landing_header > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main-landing_header > .container > .loging-btn{
+    min-width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-landing_header > .container > .loging-btn > .log-in-btn{
+    width: auto;
+    background-color: var(--light-blue);
+    color: var(--white);
+}
+.main-landing_header > .container > .loging-btn > .sign-up-btn{
+    width: auto;
+    color: var(--light-blue);
+}
+
 
 
 

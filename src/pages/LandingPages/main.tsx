@@ -3,10 +3,10 @@ import MainLandingPageHeader from "../../components/Headers/MainLandingPageHeade
 export default function Main(){
     return (
         <>
-            <div className="user-section main-landing-sec-1">
+            <div className="user-section main-landing-sec with-header">
                 <MainLandingPageHeader></MainLandingPageHeader>
                 <div className="main-landing-sec-1_body">
-                    <div className="container">
+                    <div className="container grid-two-col">
                         
                     </div>
                 </div>

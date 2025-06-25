@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import "../style/Logginglayouts.css";
+
 import loggingImg from "../assets/system_picture/loggingPic1.jpg";
 import LoggingLogo from "../components/Logo/LoggingLogo";
 

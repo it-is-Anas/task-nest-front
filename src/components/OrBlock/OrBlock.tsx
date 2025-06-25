@@ -1,4 +1,3 @@
-import '../../style/OrBlock.css';
 
 export default function OrBlock(){
     return (
