@@ -7,8 +7,10 @@ export default function MainLandingPageHeader(){
             <div className="container ">
                 <LoggingLogo  />
                 <div className="loging-btn">
-                    <LoggingBtn  link={true} to={'/log/log-in'} cls='log-in-btn' >Log in</LoggingBtn>
-                    <LoggingBtn  link={true} to={'/log/sign-up'}  cls='sign-up-btn' >Sign up</LoggingBtn>
+                    <LoggingBtn   cls='log-in-btn' >Log in</LoggingBtn>
+                    <LoggingBtn   cls='sign-up-btn' >Sign up</LoggingBtn>
+                    {/* <LoggingBtn  link={true} to={'/log/log-in'} cls='log-in-btn' >Log in</LoggingBtn>
+                    <LoggingBtn  link={true} to={'/log/sign-up'}  cls='sign-up-btn' >Sign up</LoggingBtn> */}
                 </div>
             </div>
         </header>
