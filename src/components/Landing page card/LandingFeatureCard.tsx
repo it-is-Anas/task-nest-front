@@ -1,17 +1,19 @@
-import icon from '../../assets/system_picture/Landing page/feature icon/feat1.png';
 
 
-export default function LandingFeatureCard(){
+type props = {
+    icon: string,
+    title: string,
+    desc: string,
+};
+
+export default function LandingFeatureCard({icon='',title='',desc=''}:props){
 
     return (
         <div className="feature-box">
             <img src={icon} alt="" className="icon" />
-            <p className="title"> Security & Customization</p>
+            <p className="title"> {title}</p>
             <p className="desc">
-                User Roles & Permissions
-                Dark Mode / Themes
-                Two-Factor Authentication
-                Data Backup & Export Options
+                {desc}
             </p>
         </div>
     );

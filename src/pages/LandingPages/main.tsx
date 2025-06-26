@@ -7,6 +7,11 @@ import LandingServiceCard from "../../components/Landing page card/LandingServic
 import ContactUsImg from '../../assets/system_picture/Landing page/sec_five_pic.png';
 import InputForm from "../../components/Inputs/InputForm";
 import TextAreaForm from "../../components/Inputs/TextAreaForm";
+import feat1Icon from '../../assets/system_picture/Landing page/feature icon/feat1.png';
+import feat2Icon from '../../assets/system_picture/Landing page/feature icon/feat2.png';
+import feat3Icon from '../../assets/system_picture/Landing page/feature icon/feat3.png';
+import feat4Icon from '../../assets/system_picture/Landing page/feature icon/feat4.png';
+
 import securityImg from '../../assets/system_picture/Landing page/Service picture/Security On-pana.png';
 import easyAndFreeToUseImg from '../../assets/system_picture/Landing page/Service picture/Enthusiastic-pana.png';
 import solveWithTeamImg from '../../assets/system_picture/Landing page/Service picture/At the office-amico (1).png';
@@ -14,6 +19,50 @@ import solveWithTeamImg from '../../assets/system_picture/Landing page/Service p
 
 
 export default function Main(){
+    const features = [
+        {
+            id: 1,
+            icon: feat1Icon,
+            title: 'Security & Customization',
+            desc: `User Roles & Permissions
+                Dark Mode / Themes
+                Two-Factor Authentication
+                Data Backup & Export Options`
+        },
+        {
+            id: 2,
+            icon: feat2Icon,
+            title: ' Integration & Syncing',
+            desc: `Email Integration
+                Slack / Discord / Teams Integration
+                Offline Mode
+                Cloud Sync`
+        },
+        {
+            id: 3,
+            icon: feat3Icon,
+            title: 'Collaboration Tools',
+            desc: `Team Workspaces
+                    Task Assignment
+                    Comments & Mentions
+                    Real-time Updates
+                    Activity Logs / History`
+        },
+        {
+            id: 4,
+            icon: feat4Icon,
+            title: 'Core Task Features',
+            desc: `Task Creation & Editing
+                    Due Dates & Reminders
+                    Prioritization (High/Medium/Low)
+                    Recurring Tasks
+                    Subtasks / Checklists
+                    Task Status (To Do, In Progress, Done)`
+        },
+    ];
+
+    const featuresTag = features.map(ele=>(<LandingFeatureCard key={ele.id} icon={ele.icon} title={ele.title} desc={ele.desc} />));
+
     return (
         <>
             <div className="user-section main-landing-sec sec-1 with-header">
@@ -45,10 +94,7 @@ export default function Main(){
                     <p className="sub-head-line">Create new Account to be part</p>
                     <p className="head-line">Create an account and take advantage of the free offer</p>
                     <div className="feature-box">
-                        <LandingFeatureCard></LandingFeatureCard>
-                        <LandingFeatureCard></LandingFeatureCard>
-                        <LandingFeatureCard></LandingFeatureCard>
-                        <LandingFeatureCard></LandingFeatureCard>
+                        { featuresTag }
                     </div>
                 </div>  
             </div>  
@@ -110,6 +156,7 @@ export default function Main(){
                     <p className="">TaskNest2025, All rights is reserved</p>
                 </div>
             </footer>
+            
         </>
     );
 }

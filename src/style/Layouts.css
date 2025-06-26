@@ -1,9 +1,11 @@
 .g-logo{
-    margin-right: auto;
-    margin-left: -1em;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--dark-blue);
 }
 .g-logo > img{
     width: 8em;
+    margin-left: 10px;
 }
 .g-layout{
     width: 100dvw;
@@ -66,6 +68,10 @@
     margin-bottom: 1em;
     font-size: 0.8em;
 }
+.g-form-btn > a{
+    color: inherit;
+    text-decoration: none;
+}
 .g-form-btn.auto-width{
     width: auto;
 }
@@ -125,7 +131,6 @@
 }
 .g-input-double-box > .g-input-form-box > .g-input-form{
     width: 9.5em;
-    background-color: red;
     
 }
 .g-input-double-box > .g-input-form-box:last-of-type{
@@ -175,6 +180,7 @@
 .user-layout{
     width: 100dvw;
     height: 100dvh;
+    position: relative;
 }
 
 .user-section{
@@ -454,12 +460,55 @@
     background: var(--light-blue);
     height: 3em;
     color: var(--white);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: .7em;
 }
 .user-section.footer .container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--gray);
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--light-blue);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-blue);
+}
+
+.g-go-up-btn{
+    position: absolute;
+    bottom: 5px;
+    background: var(--light-blue);
+    transform: rotate(-90deg);
+    width: 1.5em;
+    display: grid
+;
+    place-content: center;
+    border-radius: 50%;
+    height: 1.5em;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 2em;
+    right: 10px;
+    color: var(--white);
+    cursor: pointer;
+}
+
 
 @media (max-width: 768px) {
     .g-layout{
