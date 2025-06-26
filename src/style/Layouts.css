@@ -125,6 +125,7 @@
 }
 .g-input-double-box > .g-input-form-box > .g-input-form{
     width: 9.5em;
+    background-color: red;
     
 }
 .g-input-double-box > .g-input-form-box:last-of-type{
@@ -155,6 +156,11 @@
     margin-top: 1em;
     margin-bottom: 1em;
     background-color: var(--gray);
+}
+.g-text-area-form{
+    width: 25em;
+    height: 8em;
+    resize: none;
 }
 
 .g-input-double-box{
@@ -370,13 +376,21 @@
     font-weight: 500;
 }
 
-.user-section.sec-4{}
-.user-section.sec-4 .service-box{
-    width: 100%;
-    height: calc(100% - 4em);
+.user-section.sec-4{
+    /* height: auto; */
+}
+.user-section.sec-4 .container{
+    min-height: auto;
+}
+.user-section.sec-4 .container .service-card-box{ 
     display: flex;
     align-items: center;
     justify-content: space-around;
+    min-height: 100%;
+}
+
+.user-section.sec-4 .service-box{
+    
 }
 
 .landing-service-card{
@@ -397,9 +411,54 @@
     width: 7em;
 }
 .landing-service-card_label{
-    font-size: 1em;
+    font-size: .8em;
     font-weight: bold;
     color: var(--light-blue);
+}
+
+.user-section.sec-5{
+    
+}
+.user-section.sec-5 .container{
+    display: grid;
+    grid-template-rows: 4em 1fr;
+}
+.user-section.sec-5 > .container > .body > .text-col > .head-line{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--dark-blue);
+    margin-bottom: 1em;
+}
+.user-section.sec-5 > .container > .body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.user-section.sec-5 > .container > .body > .img-col > img{
+    width: 18em;
+}
+.user-section.sec-5 > .container > .body > .text-col{
+    display: flex
+    ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+.send-btn{
+    background-color: var(--light-green);
+}
+
+.user-section.footer{
+    height: 40dvh;
+    background: var(--light-blue);
+    height: 3em;
+    color: var(--white);
+}
+.user-section.footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -435,7 +494,16 @@
     .main-landing-sec-2 > .container > .feature-box{
     flex-wrap: wrap;
     }
-    .user-section.sec-4 .service-box{
+    .user-section.sec-4 {
+        height: auto;
+    }
+    .user-section.sec-4 .container .service-card-box{
         flex-direction: column;
+    }
+    .user-section.sec-5 > .container > .body{
+        grid-template-columns: 1fr ;
+    }
+    .user-section.sec-5 > .container > .body > .img-col{
+        display: none;
     }
 }

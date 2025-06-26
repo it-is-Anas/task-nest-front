@@ -1,4 +1,3 @@
-
 type props = {
     headline: string,
     subHeadline: string,

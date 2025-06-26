@@ -4,6 +4,13 @@ import LoggingBtn from "../../components/Buttons/LoggingBtn";
 import LandingFeatureCard from "../../components/Landing page card/LandingFeatureCard";
 import SectionHeadLine from "../../components/Section Head Line/SectionHandLine";
 import LandingServiceCard from "../../components/Landing page card/LandingServiceCard";
+import ContactUsImg from '../../assets/system_picture/Landing page/sec_five_pic.png';
+import InputForm from "../../components/Inputs/InputForm";
+import TextAreaForm from "../../components/Inputs/TextAreaForm";
+import securityImg from '../../assets/system_picture/Landing page/Service picture/Security On-pana.png';
+import easyAndFreeToUseImg from '../../assets/system_picture/Landing page/Service picture/Enthusiastic-pana.png';
+import solveWithTeamImg from '../../assets/system_picture/Landing page/Service picture/At the office-amico (1).png';
+
 
 
 export default function Main(){
@@ -71,13 +78,38 @@ export default function Main(){
             <div className="user-section sec-4">
                 <div className="container">
                     <SectionHeadLine  headline="What Task it offer" subHeadline="Services" />
-                    <div className="service-box">
-                        <LandingServiceCard />
-                        <LandingServiceCard />
-                        <LandingServiceCard />
+                    <div className="service-card-box">
+                        <LandingServiceCard img={securityImg} label="Security"  />
+                        <LandingServiceCard img={easyAndFreeToUseImg} label="Easy & free to use"  />
+                        <LandingServiceCard img={solveWithTeamImg} label="Solve with team"  />
                     </div>
                 </div>
             </div>
+            <div className="user-section sec-5">
+                <div className="container">
+                    <SectionHeadLine  headline="Let's talk to us" subHeadline="Contact us" />
+                    <div className="body">
+                        <div className="img-col flex-center">
+                            <img src={ContactUsImg} alt="" className="" />
+                        </div>
+                        <div className="text-col">
+                            <p className="head-line">Send a Message :</p>
+                            <InputForm  type="text" label='name' placeholder="Jhon" />
+                            <InputForm  type="email" label='email' placeholder="jhon@example.com" />
+                            <TextAreaForm  label='Message' placeholder="Hello how you doing ...?" />
+                            <LoggingBtn cls="g-form-btn_dark-blue send-btn" >
+                                <p>Send</p>
+                            </LoggingBtn>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer className="user-section footer" >
+                <div className="container">
+                    <p className="">TaskNest2025, All rights is reserved</p>
+                </div>
+            </footer>
         </>
     );
 }
