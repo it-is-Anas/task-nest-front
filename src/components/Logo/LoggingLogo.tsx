@@ -1,6 +1,4 @@
 
-import loggingLogo from '../../assets/system_picture/Logo/Logging logo.jpg';
-
 
 export default function LoggingLogo() {
     return (
