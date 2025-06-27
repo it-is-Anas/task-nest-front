@@ -5,7 +5,7 @@ import LoggingLogo from "../components/Logo/LoggingLogo";
 
 export default function LogLayout() {
     return (
-        <div className="g-layout" >  
+        <div className="g-layout container"  >  
             <form action="" className="g-layout_form-sec">
                 <LoggingLogo />
                 <Outlet />

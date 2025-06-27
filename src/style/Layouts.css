@@ -2,14 +2,18 @@
     font-size: 1.3em;
     font-weight: bold;
     color: var(--dark-blue);
+    margin-right: auto;
+}
+.g-logo{
+    margin-top: 10px;
 }
 .g-logo > img{
     width: 8em;
     margin-left: 10px;
 }
 .g-layout{
-    width: 100dvw;
-    height: 100dvh;
+    /* width: 100dvw; */
+    /* height: 100dvh; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-content: center;
@@ -375,11 +379,13 @@
 .user-section.sec-3 > .container > .body > p{
     margin: .5em;
     font-size: .9em;
+    margin: 1em 0;
 }
 .user-section.sec-3 > .container > .body > .title{
     font-size: 1.4em;
     color: var(--light-blue);
     font-weight: 500;
+    margin: 1em 0;
 }
 
 .user-section.sec-4{
@@ -400,8 +406,8 @@
 }
 
 .landing-service-card{
-    width: 9em;
-    height: 10em;
+    width: 12em;
+    height: 14em;
     background-color: var(--gray);
     border-radius: 10px;
     display: flex
@@ -414,10 +420,10 @@
     font-size: 18px;
 }
 .landing-service-card_img{
-    width: 7em;
+    width: 9em;
 }
 .landing-service-card_label{
-    font-size: .8em;
+    font-size: .9em;
     font-weight: bold;
     color: var(--light-blue);
 }
