@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
 
 
-export default function UserLayout() {
+export default function LandingLayout() {
     return (
         <div className="user-layout" >  
-                <Outlet></Outlet>
+            <Outlet></Outlet>
         </div>
     )
 } 

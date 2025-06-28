@@ -1,0 +1,14 @@
+
+.mobile-menu-shell{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100dvw - 2em);
+    height: 100dvh;
+    background-color: red;
+    transform: translate(100%);
+    transition: all 1s 1s ease-in-out;
+}
+.mobile-menu-shell.opened{
+    transform: translate(0);
+}

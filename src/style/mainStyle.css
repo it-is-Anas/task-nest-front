@@ -35,6 +35,12 @@
 }
 
 
+
+.mobile{
+    display: none !important;
+}
+
+
 @media (min-width: 1000px) {
     .container{
         width: 900px;
@@ -49,6 +55,17 @@
     .container{
         width: 550px;
     }
+    .pc{
+        display: none !important;
+    }
+    
+    .mobile{
+        display: initial !important;
+    }
+    .mobile.flex{
+        display: flex !important;
+    }
+
 }
 @media (max-width: 550px) {
     .container{

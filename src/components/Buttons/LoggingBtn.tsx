@@ -16,9 +16,9 @@ export default function LoggingBtn({ children ,cls='' , link = false , to='/' }:
         );
     }else{
         return ( 
-            <button className={"g-form-btn  "+cls} >
-                <Link to={to} >{children}</Link>
-            </button>
+            <Link to={to} className={"g-form-btn  "+cls} >
+                {children}
+            </Link>
         );
     }
 }
