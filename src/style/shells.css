@@ -5,10 +5,25 @@
     right: 0;
     width: calc(100dvw - 2em);
     height: 100dvh;
-    background-color: red;
+    background-color: var(--gray);
     transform: translate(100%);
-    transition: all 1s 1s ease-in-out;
+    transition: all 2s  ease-in-out;
 }
+.mobile-menu-shell_close-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .5em 1em;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 27px;
+    padding: 0.3em;
+    margin: 0;
+    top: -7px;
+}
+
 .mobile-menu-shell.opened{
     transform: translate(0);
 }

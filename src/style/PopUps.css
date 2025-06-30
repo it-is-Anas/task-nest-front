@@ -1,0 +1,75 @@
+.mobile-menu{
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+}
+.mobile-search-menu_search-input{
+    width: 90%;
+    margin: 1em auto;
+    display: block;
+    background: var(--white);
+    padding: .5em;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: .9em;
+    border: none;
+    outline: none;
+    position: relative;
+}
+.mobile-search-menu_old-searches-box{
+    width: 90%;
+    height: calc(100% - 3.8875em);
+    margin: 1em auto;
+    overflow-y: scroll;
+    padding: 0  0 .5em 0;
+    padding-right: .3em;
+}
+
+.mobile-search-menu_old-search{
+    background: var(--white);
+    padding: .5em;
+    margin: .3em 0;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: .9em;
+    cursor: pointer;
+    transition: .5s  all ease-in-out;
+}
+.mobile-search-menu_old-search:hover{
+    background: #7f8caa47;
+    font-weight: 500;
+}
+
+.notification-head-line{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+    width: 90%;
+    margin-left:  auto;
+    margin-right:  auto;
+}
+
+
+.mobile-menu_title{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: .35em;
+}
+.mobile-menu_notification-number{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: .35em;
+    color: red;
+}
+
+.mobile-menu_btn{
+    background-color: var(--white);
+    margin: .3em auto;
+    width: 90%;
+    text-align: left;
+}
+.mobile-menu_btn:hover{
+    background: #7f8caa47;
+    font-weight: 700;
+}

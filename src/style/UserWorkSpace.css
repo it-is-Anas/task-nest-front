@@ -49,6 +49,7 @@
 
 .work-space-header_icon-box{
     height: 100%;
+    cursor: pointer;
 }
 .work-space-header_icon{
     width: 2em;
