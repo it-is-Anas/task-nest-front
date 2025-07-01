@@ -14,12 +14,19 @@
 }
 
 .user-work-space > .r2 > .c1{
-    background-color: blue;
+
 }
 .user-work-space > .r2 > .c2{
 
 }
 
+
+.work-space-page{
+    width: 100%;
+    height: 100%;
+    font-size: 1.4em;
+    font-weight: 700;
+}
 
 
 .work-space-header{
@@ -60,6 +67,8 @@
     object-fit: cover;
     border-radius: 50%;
 }
+
+
 
 
 

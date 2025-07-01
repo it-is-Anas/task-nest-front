@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import WorkSpaceHeader from '../components/Headers/WorkSpaceHeader';
+import WorkSpaceAside from "../components/Aside/WorkSpaceAside";
 
 export default function WorkSpaceLayout() {
     return (
@@ -8,7 +9,9 @@ export default function WorkSpaceLayout() {
                 <WorkSpaceHeader />
             </div>
             <div className="r2">
-                <div className="c1"></div>
+                <div className="c1">
+                    <WorkSpaceAside />
+                </div>
                 <div className="c2">
                     <Outlet></Outlet>
                 </div>
