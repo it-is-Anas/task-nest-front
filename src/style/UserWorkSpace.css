@@ -30,12 +30,13 @@
 
 .work-space-page.dashboard{
     display: grid;
-    grid-template-rows: 4em 1fr;
+    grid-template-rows: 5em 1fr;
 }
 .col-1{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .col-2{
 
@@ -50,7 +51,6 @@
     outline: none;
     padding: .4em;
     border-radius: 5px;
-    /* min-width: 15em; */
     align-items: center;
     opacity: .8;
     transition: .4s all ease-in;
