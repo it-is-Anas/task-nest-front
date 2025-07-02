@@ -4,6 +4,8 @@ import ProjectIcon from '../../assets/system_picture/System icons/create project
 import TaskIcon from '../../assets/system_picture/System icons/create task icon.png';
 import TeamIcon from '../../assets/system_picture/System icons/create team icon.png';
 import MsgIcon from '../../assets/system_picture/System icons/create msg icon.png';
+import WorkSpaceSelectedBox from '../../components/SelecetBox/WorkSpaceSelectedBox';
+import PaginationBtn from '../../components/Buttons/PaginationBtn';
 
 export default function UserDashboard(){
     return (
@@ -14,7 +16,73 @@ export default function UserDashboard(){
                 <DashboardBtn img={TeamIcon} label='Create Team' subLabel='Organize task to your project' />
                 <DashboardBtn img={MsgIcon} label='Create Message' subLabel='Organize task to your project' />
             </div>
-            <div className="col-2"></div>
+            <div className="col-2">
+                <div className="work-space_dashboard-filter-bar">
+                    <p className="work-space-dashboard-filter-bar_head-line">History</p>
+                    <div className="work-space-dashboard-filter-bar_filters">
+                        <WorkSpaceSelectedBox />
+                        <WorkSpaceSelectedBox />
+                        <WorkSpaceSelectedBox />
+                    </div>
+                </div>
+                <div className="work-space_dashboard-history-table">
+                    <div className="work-space-dashboard-history-table_header">
+                        <p className="work-space-dashboard-history-table-header_column">Id</p>
+                        <p className="work-space-dashboard-history-table-header_column">ِAction</p>
+                        <p className="work-space-dashboard-history-table-header_column">Doer</p>
+                        <p className="work-space-dashboard-history-table-header_column">Date</p>
+                        <p className="work-space-dashboard-history-table-header_column">Status</p>
+                        <p className="work-space-dashboard-history-table-header_column">Note</p>
+                    </div>
+                    <div className="work-space-dashboard-history-table_row">
+                        <p className="work-space-dashboard-history-table-row_cell">1</p>
+                        <p className="work-space-dashboard-history-table-row_cell">create a project</p>
+                        <p className="work-space-dashboard-history-table-row_cell">Anas al Homsani</p>
+                        <p className="work-space-dashboard-history-table-row_cell">18/2/2022</p>
+                        <p className="work-space-dashboard-history-table-row_cell">In process</p>
+                        <p className="work-space-dashboard-history-table-row_cell">And as I begin to live. And I love you, I miss you ... </p>
+                    </div>
+                    <div className="work-space-dashboard-history-table_row">
+                        <p className="work-space-dashboard-history-table-row_cell">1</p>
+                        <p className="work-space-dashboard-history-table-row_cell">create a project</p>
+                        <p className="work-space-dashboard-history-table-row_cell">Anas al Homsani</p>
+                        <p className="work-space-dashboard-history-table-row_cell">18/2/2022</p>
+                        <p className="work-space-dashboard-history-table-row_cell">In process</p>
+                        <p className="work-space-dashboard-history-table-row_cell">And as I begin to live. And I love you, I miss you ... </p>
+                    </div>
+                    <div className="work-space-dashboard-history-table_row">
+                        <p className="work-space-dashboard-history-table-row_cell">1</p>
+                        <p className="work-space-dashboard-history-table-row_cell">create a project</p>
+                        <p className="work-space-dashboard-history-table-row_cell">Anas al Homsani</p>
+                        <p className="work-space-dashboard-history-table-row_cell">18/2/2022</p>
+                        <p className="work-space-dashboard-history-table-row_cell">In process</p>
+                        <p className="work-space-dashboard-history-table-row_cell">And as I begin to live. And I love you, I miss you ... </p>
+                    </div>
+                    <div className="work-space-dashboard-history-table_row">
+                        <p className="work-space-dashboard-history-table-row_cell">1</p>
+                        <p className="work-space-dashboard-history-table-row_cell">create a project</p>
+                        <p className="work-space-dashboard-history-table-row_cell">Anas al Homsani</p>
+                        <p className="work-space-dashboard-history-table-row_cell">18/2/2022</p>
+                        <p className="work-space-dashboard-history-table-row_cell">In process</p>
+                        <p className="work-space-dashboard-history-table-row_cell">And as I begin to live. And I love you, I miss you ... </p>
+                    </div>
+                    <div className="work-space-dashboard-history-table_row">
+                        <p className="work-space-dashboard-history-table-row_cell">1</p>
+                        <p className="work-space-dashboard-history-table-row_cell">create a project</p>
+                        <p className="work-space-dashboard-history-table-row_cell">Anas al Homsani</p>
+                        <p className="work-space-dashboard-history-table-row_cell">18/2/2022</p>
+                        <p className="work-space-dashboard-history-table-row_cell">In process</p>
+                        <p className="work-space-dashboard-history-table-row_cell">And as I begin to live. And I love you, I miss you ... </p>
+                    </div>
+                </div>
+                <div className="work-space_dashboard-pagination-bar">
+                    <PaginationBtn label='Previous'  />
+                    <p className="work-space_dashboard-pagination-bar_number avtive">1</p>
+                    <p className="work-space_dashboard-pagination-bar_number">2</p>
+                    <p className="work-space_dashboard-pagination-bar_number">3</p>
+                    <PaginationBtn label='Next'  />
+                </div>
+            </div>
         </div>
     );
 }

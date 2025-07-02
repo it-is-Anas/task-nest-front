@@ -8,8 +8,8 @@ interface LoggingBtnProps {
     to?:string
 }
 
-export default function LoggingBtn({ children ,cls='' , link = false , to='/' }: LoggingBtnProps) {
-    if(!link && !NavLink){
+export default function LoggingBtn({ children ,cls='' , navLink=false , link = false , to='/' }: LoggingBtnProps) {
+    if(!link && !navLink){
         return ( 
             <button className={"g-form-btn  "+cls} >
                 {children}
