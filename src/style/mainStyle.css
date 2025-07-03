@@ -41,6 +41,10 @@
 }
 
 
+.img-system{
+    width: 15em;
+}
+
 @media (min-width: 1000px) {
     .container{
         width: 900px;

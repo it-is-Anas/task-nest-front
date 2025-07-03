@@ -434,6 +434,10 @@
     margin-right: 10px;
     background-color: var(--white);
 }
+.inbox-header_btn.chat-icon.close-btn{
+    margin: 0;
+    margin-right: 10px;
+}
 .inbox-page-chat-column_chat-body{
     /* background-image: url('../assets/system_picture/chatBKG.jpg');
     background-size: cover;
@@ -543,7 +547,6 @@
 
 .project-card{
     width: 8em;
-    height: 8em;
     background: var(--gray);
     border-radius: 5px;
     margin: .3em auto;
@@ -574,6 +577,7 @@
     grid-template-rows: 3em calc(100vh - 5.9em);
     
 }
+
 .project-page_header{
     padding: .4em;
     display: flex;

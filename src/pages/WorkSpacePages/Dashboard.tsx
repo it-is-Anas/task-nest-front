@@ -5,7 +5,7 @@ import TaskIcon from '../../assets/system_picture/System icons/create task icon.
 import TeamIcon from '../../assets/system_picture/System icons/create team icon.png';
 import MsgIcon from '../../assets/system_picture/System icons/create msg icon.png';
 import WorkSpaceSelectedBox from '../../components/SelecetBox/WorkSpaceSelectedBox';
-import PaginationBtn from '../../components/Buttons/PaginationBtn';
+import WorkSpacePagination from '../../components/Pagination/WorkSpacePagination';
 
 export default function UserDashboard(){
     return (
@@ -75,13 +75,7 @@ export default function UserDashboard(){
                         <p className="work-space-dashboard-history-table-row_cell">And as I begin to live. And I love you, I miss you ... </p>
                     </div>
                 </div>
-                <div className="work-space_dashboard-pagination-bar">
-                    <PaginationBtn label='Previous'  />
-                    <p className="work-space_dashboard-pagination-bar_number avtive">1</p>
-                    <p className="work-space_dashboard-pagination-bar_number">2</p>
-                    <p className="work-space_dashboard-pagination-bar_number">3</p>
-                    <PaginationBtn label='Next'  />
-                </div>
+                <WorkSpacePagination />
             </div>
         </div>
     );
