@@ -1,4 +1,3 @@
-import LoggingLogo from "../Logo/LoggingLogo";
 import WorkSpaceSeachBox from "../SearchBox/WorkSpaceSearchBox";
 import NotficationBell from '../../assets/system_picture/System icons/icons8-bell-48.png';
 import ProfilePicture from '../../assets/system_picture/System icons/profile pricture.jpg';
@@ -8,6 +7,7 @@ import MobileSearchMenu from "../PopUps/MobileSearchMenu";
 import MobileNotificationMenu from "../PopUps/MobileNotificationMenu";
 import { useRef } from "react";
 import MobileBurgerMenu from "../PopUps/MobileMenuBurger";
+import MainLogo from "../Logo/MainLogo";
 
 export default function WorkSpaceLayout(){
 
@@ -30,7 +30,7 @@ export default function WorkSpaceLayout(){
     return (
         <>
             <header className="work-space-header" >
-                <LoggingLogo />
+                <MainLogo />
                 <WorkSpaceSeachBox cls='pc' />
                 <div className="flex-center  work-space-header_icon-box">
                     <img onClick={openSearchPopUpFun} src={SearchIcon} alt="" className="work-space-header_icon mobile" />

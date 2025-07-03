@@ -4,8 +4,9 @@
     color: var(--dark-blue);
     /* margin-right: auto; */
 }
-.g-logo{
-    /* margin-top: 10px; */
+.g-logo.logging{
+    margin-top: 10px;
+    margin-right: auto;
 }
 .g-logo > img{
     width: 8em;
