@@ -541,7 +541,54 @@
 
 /* Project */
 
+.project-card{
+    width: 8em;
+    height: 8em;
+    background: var(--gray);
+    border-radius: 5px;
+    margin: .3em auto;
+    padding: .5em;
 
+}
+.project-card > *{
+    padding: 3px;
+    font-weight: 400;
+}
+.project-card_id{
+    font-size: .6em;
+}
+.project-card_name{
+    font-size: .8em;
+    font-weight: 700;
+}
+.project-card_status{
+    font-size: .6em;
+    font-weight: 700;
+}
+.project-card_desc{
+    font-size: .6em;
+}
+
+.work-space-page.project-page{
+    display: grid;
+    grid-template-rows: 3em calc(100vh - 5.9em);
+    
+}
+.project-page_header{
+    padding: .4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-page_body{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+}
 
 
 @media (min-width: 1000px) {
@@ -565,6 +612,8 @@
     .inbox-page_chat-column{
         position: absolute;
     }
+
+    /* project page */
     
 }
 @media (max-width: 550px) {
