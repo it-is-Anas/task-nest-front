@@ -5,13 +5,14 @@ interface LoggingBtnProps {
     cls?: string,
     link?: boolean,
     navLink?: boolean,
-    to?:string
+    to?:string,
+    onClick?:(e:React.FormEvent<HTMLFormElement>)=>void
 }
 
-export default function LoggingBtn({ children ,cls='' , navLink=false , link = false , to='/' }: LoggingBtnProps) {
+export default function LoggingBtn({ children ,cls='' , navLink=false , link = false , to='/',onClick=()=>console.log('Default Function') }: LoggingBtnProps) {
     if(!link && !navLink){
         return ( 
-            <button className={"g-form-btn  "+cls} >
+            <button onClick={onClick} className={"g-form-btn  "+cls} >
                 {children}
             </button>
         );
